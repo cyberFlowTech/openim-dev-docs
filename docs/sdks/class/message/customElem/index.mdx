@@ -1,0 +1,70 @@
+---
+sidebar_position: 2
+toc_min_heading_level: 2
+toc_max_heading_level: 2
+---
+
+# CustomElem
+
+## 功能介绍
+
+:::info
+
+自定义信息。
+
+:::
+
+<Tabs
+groupId="sdks-language"
+values={[
+{ label: 'iOS', value: 'iOS', },
+{ label: 'Android', value: 'Android', },
+{ label: 'Web', value: 'Web', },
+]
+}>
+
+<TabItem value="iOS">
+
+### OIMCustomElem
+
+| 字段名称    | 字段类型 | 描述 |
+| ----------- | -------- | ---- |
+| data        | [CustomElemData](#CustomElemData) | 自定义消息内容，是一个JSON string |
+| extension   | NSString | 拓展信息 |
+| description | NSString | 描述信息 |
+
+</TabItem>
+
+<TabItem value="Android">
+
+### CustomElem
+
+| 字段名称    | 字段类型 | 描述 |
+| ----------- | -------- | ---- |
+| data        | [CustomElemData](#CustomElemData) | 自定义消息内容，是一个JSON string |
+| extension   | String   | 拓展 |
+| description | String   | 描述 |
+
+
+</TabItem>
+
+<TabItem value="Web">
+
+### CustomElem
+
+| 字段名称    | 字段类型 | 描述               |
+| ----------- | -------- | ------------------ |
+| data        | [CustomElemData](#CustomElemData) | 自定义消息内容，是一个JSON string |
+| extension   | string   | 拓展信息           |
+| description | string   | 描述信息           |
+
+</TabItem>
+
+</Tabs>
+
+## CustomElemData  
+
+| 字段名称    | 字段类型 | 描述 |
+| ----------- | -------- | ---------------- |
+| customEvent | [CustomMessageType](docs/sdks/enum/customMessageType.mdx) | 自定义消息类型 |
+| customExts  | [Server CustomExts](docs/sdks/class/message/customElem/serverCustomExts.mdx) \| [Client CustomExs](docs/sdks/class/message/customElem/clientCustomExts.mdx)  | 自定义消息内容 |
