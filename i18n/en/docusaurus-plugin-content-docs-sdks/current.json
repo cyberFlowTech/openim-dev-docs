@@ -54,5 +54,45 @@
   "sidebar.tutorialSidebar.category.枚举类型": {
     "message": "Enumeration Types",
     "description": "The label for category 枚举类型 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Quick Integration": {
+    "message": "Quick Integration",
+    "description": "The label for category Quick Integration in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.SDKs for Various Platforms": {
+    "message": "SDKs for Various Platforms",
+    "description": "The label for category SDKs for Various Platforms in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Initialization, Login": {
+    "message": "Initialization, Login",
+    "description": "The label for category Initialization, Login in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.User Related": {
+    "message": "User Related",
+    "description": "The label for category User Related in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Relationship Chain Related": {
+    "message": "Relationship Chain Related",
+    "description": "The label for category Relationship Chain Related in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Group Related": {
+    "message": "Group Related",
+    "description": "The label for category Group Related in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Conversation Related": {
+    "message": "Conversation Related",
+    "description": "The label for category Conversation Related in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Message-Related": {
+    "message": "Message-Related",
+    "description": "The label for category Message-Related in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Message-related": {
+    "message": "Message-related",
+    "description": "The label for category Message-related in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.CustomElem": {
+    "message": "CustomElem",
+    "description": "The label for category CustomElem in sidebar tutorialSidebar"
   }
 }

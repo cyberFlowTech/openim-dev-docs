@@ -33,28 +33,18 @@ jobs:
       - name: Checkout # 检出分支
         uses: actions/checkout@v3
 
-      - name: Extract branch name # 拿分支/Tag
-        id: extract_branch
-        shell: bash
-        run: |
-          echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-
-      - name: Extract image tag # 提取镜像tag 命名规则 [分支名/Tag]_[GithubCommitSHA]
-        id: extract_image_tag
-        shell: bash
-        run: |
-          echo "##[set-output name=imagetag;]$(echo ${{ steps.extract_branch.outputs.branch }}_${{ steps.extract_github_sha.outputs.githubsha }})"
-
-      - name: 获取提交信息
-        id: read-commit
-        run: |
-          echo "Last commit SHA: $(git rev-parse HEAD)"
-          echo "Last commit message: $(git log -1 --pretty=format:%s)"
-          echo "commit_sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
-          echo "commit_msg=$(git log -1 --pretty=format:%s)" >> $GITHUB_OUTPUT
-
       - name: 安装依赖
         run: npm install
 
       - name: 构建
         run: npm run build
+
+      - name: Clear static resource from s3
+        run: |
+          echo 'Clear static resource from s3.'
+          npm run clear:s3
+
+      - name: Upload static resource to s3
+        run: |
+          echo 'Upload static resource to s3.'
+          npm run upload:s3
