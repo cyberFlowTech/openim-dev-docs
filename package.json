@@ -20,7 +20,7 @@
     "typecheck": "tsc",
     "clear:s3": "aws s3 rm s3://openim-develop-docs/* --recursive",
     "upload:s3": "aws s3 cp build/ s3://openim-develop-docs --recursive",
-    "deploy:cdn": "aws cloudfront create-invalidation --distribution-id E1VSE29ZOVF9UU --paths /*"
+    "deploy:cdn": "aws cloudfront create-invalidation --distribution-id E1PJKA3DN8WUNZ --paths /*"
   },
   "dependencies": {
     "@docusaurus/core": "^2.4.0",
