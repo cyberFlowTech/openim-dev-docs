@@ -1,0 +1,55 @@
+---
+sidebar_position: 2
+toc_min_heading_level: 2
+toc_max_heading_level: 2
+---
+
+# Client CustomExts
+
+## 功能介绍
+
+:::info
+
+客户端定义的自定义信息。
+
+:::
+
+## c_10005
+
+> 走AWS的图片消息的CustomExts
+
+| 字段名称     | 字段类型   | 描述 |
+| ----------------------| ------ | ---- |
+| sizeRate              | String | 图片宽高比 |
+| width                 | String | 图片宽 |
+| height                | String | 图片宽 |
+| thumbnailBase64       | String | 图片略图base64格式 |
+| thumbnailRemotePath   | String | 视图片缩略图 |
+| remotePath            | String | 图片链接 |
+
+## c_10006
+
+> 走AWS的视频消息的CustomExts
+
+| 字段名称    | 字段类型  | 描述 |
+| --------------------- | -------| ---- |
+| sizeRate              | String | 视频宽高比 |
+| width                 | String | 视频宽 |
+| height                | String | 视频宽 |
+| duration              | String | 视频时长 |
+| fileSize              | String | 视频文件大小 |
+| thumbnailBase64       | String | 视频缩略图base64格式 |
+| thumbnailRemotePath   | String | 视频缩略图 |
+| remotePath            | String | 视频链接 |
+
+## c_10007
+
+> 大表情消息的CustomExts
+
+| 字段名称    | 字段类型  | 描述 |
+| -------------- | ------ | ---- |
+| width          | String | 视频宽 |
+| height         | String | 视频宽 |
+| emoji_id       | String | 视频时长 |
+| size           | String | 视频文件大小 |
+| url            | String | 表情链接 |

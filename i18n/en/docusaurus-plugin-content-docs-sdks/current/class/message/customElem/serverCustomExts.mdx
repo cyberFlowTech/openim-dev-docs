@@ -1,0 +1,38 @@
+---
+sidebar_position: 2
+toc_min_heading_level: 2
+toc_max_heading_level: 2
+---
+
+# Server CustomExts
+
+## 功能介绍
+
+:::info
+
+服务端发起的自定义信息。
+
+:::
+
+
+## s_10001
+
+> 加群消息的CustomExts
+
+
+| 字段名称    | 字段类型  | 描述 |
+| ---------- | -------- | ---- |
+| amount     | NSString | 被邀者 |
+| fromName   | NSString | 邀请者 |
+
+## s_40004
+> 转账通知消息的CustomExts
+
+| 字段名称     | 字段类型   | 描述 |
+| ------------| -------- | ---- |
+| amount      | NSString | 转账金额 |
+| chain       | NSString | 转账代币 |
+| msg_id      | NSString | 消息ID |
+| ouid        | NSString | 用户ID |
+| title       | NSString | 转账描述 |
+| type        | NSString | 类型 |
